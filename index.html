@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimaApp</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo de la App" class="app-logo">
+        <div class="input-container">
+            <input type="text" id="Ciudad" placeholder="Buscar ciudad">
+            <button id="BuscarBoton">🔍</button>
+            <button id="MicrofonoBoton">🎙️</button>
+            <button id="UbicacionBoton">📍</button>
+        </div>
+        <div id="Respuesta_Datos" class="Resultado"></div>
+        <canvas id="weatherChart" style="display:none;"></canvas>
+        <div id="forecastContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

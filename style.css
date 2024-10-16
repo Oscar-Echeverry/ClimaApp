@@ -1,0 +1,104 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 450px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.685);
+    border-radius: 20px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.app-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    width: 60%;
+    border: 2px solid #0072ff;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    transition: all 0.3s; /* Efecto suave al interactuar */
+}
+
+input[type="text"]:focus {
+    border-color: #005bb5; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Añade sombra al enfocar */
+}
+
+button {
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Redondear bordes de botones */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Efecto suave al interactuar */
+}
+
+button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05); /* Agrandar ligeramente el botón al pasar el mouse */
+}
+
+.Resultado {
+    margin-top: 20px;
+    font-size: 1.5rem; /* Aumenta el tamaño de la fuente */
+    color: #333;
+    padding: 20px;
+    background-color: rgba(211, 240, 70, 0.9); 
+    border: 2px solid #0072ff; /* Borde azul */s
+
+}
+
+.Resultado.hidden {
+    opacity: 0; /* Ocultar resultados */
+    visibility: hidden; /* Evitar que el espacio sea ocupado */
+    transform: translateY(-20px); /* Efecto de deslizamiento al ocultar */
+}
+
+.Resultado.visible {
+    opacity: 1; /* Mostrar resultados */
+    visibility: visible; /* Hacer visibles los resultados */
+    transform: translateY(0); /* Regresar a la posición original */
+}
+
+canvas {
+    margin-top: 30px;
+    display: block;
+}
+
+#forecastContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.forecast-item {
+    text-align: center;
+    color: #555;
+}
+
+.forecast-item img {
+    width: 50px;
+    height: 50px;
+}
